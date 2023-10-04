@@ -47,7 +47,7 @@ int main() {
             if (num1 >= 0) {
                 result = sqrt(num1);
             } else {
-                printf("Error: Can't calculate square root of a negative number\n");
+                printf("Error: Can't     calculate square root of a negative number\n");
                 return 1; 
             }
             break;
