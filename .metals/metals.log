@@ -1,0 +1,116 @@
+2023.12.08 20:04:10 INFO  Started: Metals version 1.1.0 in folders 'D:\Github\Mini-Projects' for client Visual Studio Code 1.77.3.
+Exception in thread "pool-1-thread-2" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:45)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1641)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 9 more
+2023.12.08 20:04:10 WARN  Build server is not auto-connectable.
+2023.12.08 20:04:10 WARN  no build tool detected in workspace 'D:\Github\Mini-Projects'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.12.08 20:04:10 WARN  no build target for: D:\Github\Mini-Projects\Java\Simple Alarm Clock.java
+2023.12.08 20:04:10 ERROR Can't run javac on D:\Github\Mini-Projects\Java\Simple Alarm Clock.java with options: [-cp
+C:\Users\ganes\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\sourcegraph\semanticdb-javac\0.9.6\semanticdb-javac-0.9.6.jar
+-d
+C:\Users\ganes\AppData\Local\Temp\metals-javac-semanticdb3563175927983344819\target
+-Xplugin:semanticdb -sourceroot:D:\Github\Mini-Projects\Java -targetroot:C:\Users\ganes\AppData\Local\Temp\metals-javac-semanticdb3563175927983344819\target]
+java.lang.NullPointerException
+	at scala.meta.internal.pc.JavaMetalsGlobal$.makeFileObject(JavaMetalsGlobal.scala:47)
+	at scala.meta.internal.metals.JavaInteractiveSemanticdb.textDocument(JavaInteractiveSemanticdb.scala:73)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$compile$2(InteractiveSemanticdbs.scala:173)
+	at scala.Option.fold(Option.scala:263)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.compile(InteractiveSemanticdbs.scala:173)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$4(InteractiveSemanticdbs.scala:98)
+	at scala.util.Try$.apply(Try.scala:210)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.$anonfun$textDocument$1(InteractiveSemanticdbs.scala:98)
+	at java.util.HashMap.compute(null)
+	at java.util.Collections$SynchronizedMap.compute(null)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:89)
+	at scala.meta.internal.metals.InteractiveSemanticdbs.textDocument(InteractiveSemanticdbs.scala:63)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$didOpen$3(MetalsLspService.scala:1042)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(null)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(null)
+	at java.lang.Thread.run(null)
+
+2023.12.08 20:04:10 WARN  Running javac-semanticdb failed for file:///D:/Github/Mini-Projects/Java/Simple%20Alarm%20Clock.java. Output:
+
+Exception in thread "pool-1-thread-5" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:45)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1641)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 9 more
+2023.12.08 20:04:21 INFO  no build target found for D:\Github\Mini-Projects\Java\Simple Alarm Clock.java. Using presentation compiler with project's scala-library version: 3.3.1
+Dec 08, 2023 8:04:22 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-04-22-866.md
+Dec 08, 2023 8:04:25 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-04-25-109.md
+Exception in thread "pool-1-thread-16" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:45)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1641)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 9 more
+Dec 08, 2023 8:05:32 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-05-32-465.md
+Exception in thread "pool-1-thread-36" java.lang.NoClassDefFoundError: com/sun/source/tree/Tree
+	at scala.meta.internal.parsing.FoldingRangeProvider.$anonfun$getRangedForJava$2(FoldingRangeProvider.scala:48)
+	at scala.Option$WithFilter.map(Option.scala:242)
+	at scala.meta.internal.parsing.FoldingRangeProvider.getRangedForJava(FoldingRangeProvider.scala:45)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$foldingRange$3(MetalsLspService.scala:1641)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.ClassNotFoundException: com.sun.source.tree.Tree
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 9 more
+Dec 08, 2023 8:11:52 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-11-52-334.md
+Dec 08, 2023 8:17:15 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-17-15-482.md
+Dec 08, 2023 8:39:17 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-39-17-792.md
+Dec 08, 2023 8:39:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-39-19-237.md
+Dec 08, 2023 8:39:19 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-39-19-731.md
+Dec 08, 2023 8:39:21 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report D:\Github\Mini-Projects\.metals\.reports\metals-full\2023-12-08\r_compiler-error_20-39-21-007.md
+2023.12.08 21:21:06 INFO  Shutting down server
+2023.12.08 21:21:06 INFO  shutting down Metals
+2023.12.08 21:21:06 INFO  Exiting server
